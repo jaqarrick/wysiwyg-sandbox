@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(4, 34, 34);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #editor {
+            background-color: rgb(215, 235, 214);
+            position: relative;
+            left: 50;
+            right: 50;
+            width: 50vw;
+            height: 300px;
+            border: solid 1px black;
+            padding: 1rem;
+        }
+
+        #controls {
+            margin-top: 1em;
+        }
+
+        button {
+            border: none;
+            color: white;
+            background-color: rgb(1, 18, 18);
+            height: 3em;
+            width: auto;
+        }
+        button:active {
+            border: none;
+            background-color: red;
+        }
+
+
+    </style>
+
+    <title>EDITOR</title>
+
+</head>
+
+<body>
+    <div id="editor" contenteditable="true"></div>
+    <div id="controls">
+        <button> Link </button>
+        <button> Get Selection </button>
+        <button> Get Range </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
