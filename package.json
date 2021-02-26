@@ -1,0 +1,24 @@
+{
+  "name": "wysiwyg-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaqarrick/wysiwyg-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaqarrick/wysiwyg-sandbox/issues"
+  },
+  "homepage": "https://github.com/jaqarrick/wysiwyg-sandbox#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

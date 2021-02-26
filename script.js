@@ -3,9 +3,21 @@ const editorField = document.querySelector("#editor")
 const toggleEditorBtn = document.querySelector("#toggle")
 const getRangeBtn = document.querySelector("#get-range")
 const getSelectionBtn = document.querySelector("#get-selection")
+const h1Btn = document.querySelector("#h1")
+
+h1Btn.onclick = () => {
+    const selection = document.getSelection()
+    if(selection.anchorOffset !== selection.focusOffset){
+        const range = selection.getRangeAt(0)
+        const h1Tag = document.createElement('h1')
+        range.surroundContents(h1Tag)
+    }
+}
 
 getSelectionBtn.onclick = () => {
-    console.log(document.getSelection())
+    const selection = document.getSelection()
+    console.log(selection)
+    console.log(selection.getRangeAt(0))
 }
 getRangeBtn.onclick = () => {
     const range = document.createRange();
